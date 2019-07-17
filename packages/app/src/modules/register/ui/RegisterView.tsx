@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { Form, Icon, Input, Button } from 'antd';
 import { withFormik, FormikErrors, FormikProps } from 'formik';
-import { validationSchema } from '@abb/common'
+import { validationSchema } from '@abb/common';
 
 
 // value for forms.item
@@ -84,14 +84,14 @@ class C extends React.PureComponent<FormikProps<FormValues> & Props> {
 
 
 export const RegisterView = withFormik<Props, FormValues>({
-    validationSchema,
-    validateOnChange: false,
-    validateOnBlur: false,
-    mapPropsToValues: () => ({ email: '', password: '' }),
-    handleSubmit: async (values, { props, setErrors }) => {
-        const errors = await props.submit(values);
-        if (errors) {
-            setErrors(errors);
+        validationSchema,
+        validateOnChange: false,
+        validateOnBlur: false,
+        mapPropsToValues: () => ({ email: '', password: '' }),
+        handleSubmit: async (values, { props, setErrors }) => {
+            const errors = await props.submit(values);
+            if (errors) {
+                setErrors(errors);
+            }
         }
-    }
 })(C);
