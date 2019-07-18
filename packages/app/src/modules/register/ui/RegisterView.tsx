@@ -20,7 +20,7 @@ const styles = {
     }
 
 
-}
+};
 interface FormValues {
     email: string;
     password: string;
@@ -31,8 +31,8 @@ interface Props {
 class C extends React.PureComponent<FormikProps<FormValues> & Props> {
 
     render() {
-        const { values, handleChange, handleSubmit, handleBlur, touched, errors } = this.props
-        console.log(errors)
+        const { values, handleChange, handleSubmit, handleBlur, touched, errors } = this.props;
+        console.log(errors);
         return (
             <form style={styles.container} onSubmit={handleSubmit}>
                 <div >

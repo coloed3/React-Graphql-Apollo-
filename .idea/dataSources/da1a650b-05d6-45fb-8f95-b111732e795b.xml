@@ -14,7 +14,7 @@
       <Comment>default administrative connection database</Comment>
       <StateNumber>567</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>588</IntrospectionStateNumber>
+      <IntrospectionStateNumber>592</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </database>
@@ -106,7 +106,7 @@
       <Comment>standard public schema</Comment>
       <StateNumber>360</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>589</IntrospectionStateNumber>
+      <IntrospectionStateNumber>593</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
